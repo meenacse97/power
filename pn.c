@@ -1,22 +1,29 @@
 #include<stdio.h>
 #include<conio.h>
-void main()
+int main()
 {
-int n,f=0,i;
-printf("\n enter the number:");
-scanf("%d",&n);
-for(i=2;i<=n/2;i++)
+int a,b,flag,i;
+printf("\n enter the starting and ending limit:");
+scanf("%d %d",&a,&b);
+printf("\n the prime no between%d and %d",a,b);
+
+        while(a<b)
+            {
+                    flag=0;
+
+for(i=2;i<=a/2;++i)
 {
-if(n%i==0)
+if(a%i==0)
 {
-f=1;
+flag=1;
 break;
 }
 }
-if(f==0)
-{
-printf("\n  it is prime");
+if(flag==0)
+printf("\n%d",a);
+++a;
 }
-else
-printf("\n it is not a prime");
+return 0;
 }
+
+
