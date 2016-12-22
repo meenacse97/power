@@ -9,7 +9,7 @@ for(i=a;i<=b;i++)
 {
 if(i%2=]=0)
 {
-printf("\n the odd nos are :%d",i);
+printf("\n the even nos are :%d",i);
 }
 }
 getch();
